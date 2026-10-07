@@ -1,0 +1,8 @@
+{
+  "name": "validate_skill",
+  "description": "Validate a Skill directory and its deferred function manifests.",
+  "command": ["python", "validate_skill.py"],
+  "timeout_seconds": 10,
+  "input_format": "json",
+  "output_format": "json"
+}
