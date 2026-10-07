@@ -5,11 +5,8 @@ from pathlib import Path
 
 
 def main() -> int:
-    if len(sys.argv) != 2:
-        print(json.dumps({"ok": False, "error": "usage: validate_skill.py SKILL_DIR"}))
-        return 2
-
-    root = Path(sys.argv[1]).resolve()
+    payload = json.load(sys.stdin)
+    root = Path(payload["skill_dir"]).expanduser().resolve()
     skill_file = root / "SKILL.md"
     errors: list[str] = []
 
