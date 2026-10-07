@@ -1,0 +1,8 @@
+{
+  "name": "calculate_basic_metrics",
+  "description": "Calculate spread and basic bid/ask depth metrics from an order book.",
+  "command": ["python", "calculate_basic_metrics.py"],
+  "timeout_seconds": 10,
+  "input_format": "json",
+  "output_format": "json"
+}
